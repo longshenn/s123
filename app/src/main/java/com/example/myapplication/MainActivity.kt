@@ -15,6 +15,13 @@ class MainActivity : AppCompatActivity() {
         //TestDEV()
         txv.setText("嗨，我是楊子青");
 
+        override fun onTouchEvent(event: MotionEvent?): Boolean {
+            var txv:TextView = findViewById<TextView>(R.id.txv)
+            txv.text = "tcyangpu修改螢幕觸控"
+            return true
+        }
+
+
 
     }
     fun TestMaster(){
